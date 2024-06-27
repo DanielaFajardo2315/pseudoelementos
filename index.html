@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Uso de Pseudoelementos</h1>
+    <div>
+        <h2>1/2. Pseudoelementos ::before y ::after</h2>
+        <ol>
+            <li><a href="#p1">¡Salta al primer párrafo que usa ::before!</a></li>
+            <li><a href="#p2">¡Salta al segundo párrafo que usa ::after!</a></li>
+            <li><a href="#">Click aquí para no resaltar nada</a></li>
+        </ol>
+        <p id="p1">
+            Si haces click en el elemento 1 se va a resaltar este parrafo y usará un pseudoelemento ::before
+          </p>
+          <p id="p2">
+            Si haces click en el elemento 2 se va a resaltar este parrafo y usará un pseudoelemento ::after
+          </p>
+      </div>
+      <div>
+        <h2>3. Pseudoelemento ::first-letter</h2>
+        <p class="parrafoLetter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repudiandae voluptate fugiat. 
+            Et in deleniti quas, recusandae voluptatum laboriosam mollitia laborum quo velit nostrum 
+            reprehenderit repellendus neque accusamus quam modi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repudiandae voluptate fugiat. 
+            Et in deleniti quas, recusandae voluptatum laboriosam mollitia laborum quo velit nostrum 
+            reprehenderit repellendus neque accusamus quam modi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repudiandae voluptate fugiat. 
+            Et in deleniti quas, recusandae voluptatum laboriosam mollitia laborum quo velit nostrum 
+            reprehenderit repellendus neque accusamus quam modi.</p>
+      </div>
+      <div>
+        <h2>4. Pseudoelemento ::first-line</h2>
+        <p class="parrafoLine">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repudiandae voluptate fugiat. 
+            Et in deleniti quas, recusandae voluptatum laboriosam mollitia laborum quo velit nostrum 
+            reprehenderit repellendus neque accusamus quam modi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repudiandae voluptate fugiat. 
+            Et in deleniti quas, recusandae voluptatum laboriosam mollitia laborum quo velit nostrum 
+            reprehenderit repellendus neque accusamus quam modi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati repudiandae voluptate fugiat. 
+            Et in deleniti quas, recusandae voluptatum laboriosam mollitia laborum quo velit nostrum 
+            reprehenderit repellendus neque accusamus quam modi.</p>
+      </div>
+      <div>
+        <h2>5. Pseudoelemento ::selection</h2>
+        <p class="parrafoSelection">Este texto va a ser seleccionado o resaltado por el usuario</p>
+      </div>
+      <div>
+        <h2>6. Pseudoelemento ::placeholder</h2>
+        <input placeholder="Escribe algo aquí!" />
+      </div>
+      <div>
+        <h2>7. Pseudoelemento ::marker</h2>
+        <ul>
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+        </ul>
+      </div>
+      <div>
+        <h2>8. Pseudoelemento ::spelling-error</h2> <!--Experimental, no funciona aún-->
+        <textarea placeholder="Escribe algo aquí..."></textarea>
+      </div>
+      <div>
+        <h2>9. Pseudoelemento ::grammar-error</h2> <!--Experimental, no funciona aún-->
+        <p contenteditable spellcheck="true">
+          My friends is coming to the party tonight.
+        </p>
+      </div>
+</body>
+</html>
